@@ -29,6 +29,6 @@ class EncodeExtends
      */
     public function __construct()
     {
-        self::$config = Config::get('Cryptography');
+        self::$config = Config::default(new CryptographyDefaultConfiguration)::get('Cryptography');
     }
 }

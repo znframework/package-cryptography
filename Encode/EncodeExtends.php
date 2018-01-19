@@ -10,6 +10,7 @@
  */
 
 use ZN\Config;
+use ZN\Cryptography\CryptographyDefaultConfiguration;
 
 class EncodeExtends
 {

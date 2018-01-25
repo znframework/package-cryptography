@@ -10,7 +10,6 @@
  */
 
 use ZN\Config;
-use ZN\Cryptography\CryptographyDefaultConfiguration;
 
 class EncodeExtends
 {
@@ -30,6 +29,7 @@ class EncodeExtends
      */
     public function __construct()
     {
-        self::$config = Config::default(new CryptographyDefaultConfiguration)::get('Cryptography');
+        self::$config = Config::default('ZN\Cryptography\CryptographyDefaultConfiguration')
+                              ::get('Cryptography');
     }
 }
